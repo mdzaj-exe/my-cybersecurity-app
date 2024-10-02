@@ -1,11 +1,15 @@
 :root {
+  --primary-color: #2a0f75; /* Persian Indigo */
+  --accent-color: #845eea; /* Violets Are Blue */
+  --secondary-color: #ca9dd9; /* Wisteria */
+  --neutral-dark: #444444; /* Gray */
+  --neutral-light: #a39fbd; /* Pastel Purple */
+  --background-color: #242424;
+  --text-color: rgba(255, 255, 255, 0.87);
+
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

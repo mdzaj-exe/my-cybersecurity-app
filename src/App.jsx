@@ -1,5 +1,5 @@
 import React from "react";
-import "./stylesheets/Header.css";
+import "./stylesheets/App.css";
 import Header from "./components/Header";
 import AboutMe from "./components/AboutMe";
 import Skills from "./components/Skills";
@@ -10,7 +10,7 @@ import Contact from "./components/Contact";
 
 function App() {
   return (
-    <div className="App">
+    <div className="container">
       <Header />
       <AboutMe />
       <Skills />

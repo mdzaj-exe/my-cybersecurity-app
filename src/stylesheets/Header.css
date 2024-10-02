@@ -1,8 +1,6 @@
 .header {
   text-align: center;
   padding: 20px;
-  background-color: #282c34;
-  color: white;
 }
 
 .title,
@@ -22,13 +20,8 @@
   padding: 10px;
   cursor: pointer;
   transition: transform 0.3s, background-color 0.3s;
-  background-color: #61dafb;
-  border: none;
-  color: white;
-  border-radius: 5px;
 }
 
 .btn:hover {
   transform: scale(1.1);
-  background-color: #21a1f1;
 }

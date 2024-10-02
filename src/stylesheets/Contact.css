@@ -1,17 +1,13 @@
 .contact {
   padding: 50px;
-  background-color: #fff;
 }
 
 .scrolling-links {
   display: flex;
-  overflow-x: auto;
 }
 
 .scrolling-links a {
   margin-right: 0.5em;
   padding: 0.5em;
   border-radius: 0.25em;
-  background: #61dafb;
-  color: white;
 }
