@@ -1,0 +1,17 @@
+.skills {
+  padding: 50px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.grid-item {
+  padding: 20px;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+}

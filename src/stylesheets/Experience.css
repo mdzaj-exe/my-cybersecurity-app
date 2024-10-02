@@ -1,0 +1,17 @@
+.experience {
+  padding: 50px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.card {
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.details {
+  display: none;
+}

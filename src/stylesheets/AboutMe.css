@@ -1,0 +1,17 @@
+.about-me {
+  padding: 50px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.react-logo {
+  width: 100px;
+  height: 100px;
+  background: url("../assets/react.svg") no-repeat center center;
+  background-size: contain;
+  transition: transform 0.3s ease-in-out;
+}
+
+.react-logo:hover {
+  transform: rotate(360deg);
+}
