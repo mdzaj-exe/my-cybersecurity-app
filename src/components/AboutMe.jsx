@@ -16,10 +16,10 @@ const AboutMe = () => (
         </div>
       </div>
       <div className="info">
-        <div className="stats">
-          <div className="stat">Level: Entry-Level</div>
-          <div className="stat">Certificates: 20+</div>
-          <div className="stat">Projects: 5</div>
+        <div className="info-box-container">
+          <div className="info-box">Level: Entry-Level</div>
+          <div className="info-box">Certificates: 20+</div>
+          <div className="info-box">Projects: 5</div>
         </div>
         <p>I am passionate about cybersecurity and software engineering...</p>
         <button className="btn">Let's Talk</button>

@@ -58,6 +58,28 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.info-box {
+  padding: 20px;
+  background-color: var(--neutral-light);
+  border-radius: 12px;
+  transition: background-color 0.3s ease-in-out;
+  margin: 10px; /* Space between boxes */
+  flex: 1; /* Allow boxes to grow */
+  min-width: 150px; /* Minimum size */
+  max-width: 250px; /* Maximum size */
+}
+
+.info-box:hover {
+  background-color: transparent;
+}
+
+/* Flex container for info boxes */
+.info-box-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
