@@ -5,13 +5,15 @@ const AboutMe = () => (
   <section className="about-me">
     <h2>About Me</h2>
     <div className="content">
-      <div className="image-container">
-        <img
-          src="https://via.placeholder.com/150"
-          alt="Profile"
-          className="profile-image"
-        />
-        <div className="background-box"></div>
+      <div className="image-wrapper">
+        <div className="image-container">
+          <img
+            src="https://via.placeholder.com/150"
+            alt="Profile"
+            className="profile-image"
+          />
+          <div className="background-box"></div>
+        </div>
       </div>
       <div className="info">
         <div className="stats">

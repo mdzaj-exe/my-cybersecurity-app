@@ -8,22 +8,31 @@
 .content {
   display: flex;
   align-items: center;
+  margin: 20px 0;
+}
+
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Stack properly */
 }
 
 .image-container {
   position: relative;
-  margin-right: 20px;
+  margin-right: 60px;
 }
 
 .about-me .profile-image {
-  width: 170px; /* Match the background box */
-  height: 170px; /* Match the background box */
+  width: clamp(150px, 20vw, 200px); /* Responsive sizing */
+  height: clamp(150px, 20vw, 200px);
   border-radius: 15px;
   position: absolute;
-  top: 0; /* Align with the background box */
-  left: 0; /* Align with the background box */
+  top: 0;
+  left: 0;
   transform: rotate(-15deg);
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, width 0.3s ease-in-out,
+    height 0.3s ease-in-out;
 }
 
 .about-me .profile-image:hover {
@@ -31,10 +40,37 @@
 }
 
 .background-box {
-  width: 170px; /* Match the profile image */
-  height: 170px; /* Match the profile image */
+  width: clamp(150px, 20vw, 200px); /* Match profile image */
+  height: clamp(150px, 20vw, 200px);
   background-color: var(--accent-color);
   border-radius: 20px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column; /* Stack vertically */
+    align-items: center; /* Center align items */
+    text-align: center; /* Center text */
+  }
+
+  .image-wrapper {
+    margin-bottom: 20px; /* Add space below image */
+  }
+
+  .image-container {
+    margin-right: 0; /* Remove right margin on smaller screens */
+  }
+
+  .about-me .profile-image,
+  .background-box {
+    width: clamp(100px, 30vw, 150px); /* Adjust for mobile */
+    height: clamp(100px, 30vw, 150px);
+  }
+
+  .info {
+    margin-top: 20px; /* Add spacing to separate the info from the image */
+  }
 }
 
 .info {
