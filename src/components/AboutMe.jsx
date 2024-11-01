@@ -17,9 +17,15 @@ const AboutMe = () => (
       </div>
       <div className="info">
         <div className="info-box-container">
-          <div className="info-box">Entry-Level Cybersecurity</div>
-          <div className="info-box">Google Cybersecurity Certificate</div>
-          <div className="info-box">Projects: 5+</div>
+          <div className="info-box">
+            <strong>Entry-Level Cybersecurity</strong>
+          </div>
+          <div className="info-box">
+            <strong>Google Cybersecurity Certificate</strong>
+          </div>
+          <div className="info-box">
+            <strong>Projects: 5+</strong>
+          </div>
         </div>
         <p>
           I am passionate about cybersecurity, ethical hacking, and protecting
