@@ -1,0 +1,83 @@
+.projects {
+  padding: 50px;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: space-between; /* Space between the two projects */
+  gap: 20px; /* Add some space between the projects */
+}
+
+.project-item {
+  flex: 1; /* Ensure both projects take up equal space */
+  max-width: 45%; /* Limit the width of each project */
+  text-align: center; /* Center the content inside each project */
+}
+
+.image-container {
+  position: relative;
+  width: clamp(150px, 20vw, 300px); /* Set a fixed width for the container */
+  height: clamp(150px, 20vw, 300px); /* Set a fixed height for the container */
+  margin: 20px auto; /* Center the image container horizontally */
+}
+
+.project-image {
+  width: 100%; /* Ensure it matches the container's width */
+  height: 100%; /* Ensure it matches the container's height */
+  border-radius: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: center; /* Rotate around the center */
+  transform: rotate(-15deg); /* Initial rotation */
+  transition: transform 0.3s ease-in-out, width 0.3s ease-in-out,
+    height 0.3s ease-in-out;
+}
+
+.project-image:hover {
+  transform: rotate(0deg); /* Rotate to align with background box on hover */
+}
+
+.background-box {
+  width: 100%; /* Ensure it matches the container's width */
+  height: 100%; /* Ensure it matches the container's height */
+  background-color: var(--accent-color);
+  border-radius: 20px;
+}
+
+.project-btn {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: var(--accent-color); /* Use your theme's accent color */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.project-btn:hover {
+  transform: scale (1.1);
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768 px) {
+  .projects-container {
+    flex-direction: column; /* Stack projects vertically on smaller screens */
+    gap: 20 px; /* Adjust gap for smaller screens */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .project-item {
+    width: 100 %; /* Full width on mobile devices */
+    max-width: none; /* Remove max-width restriction on smaller screens */
+  }
+}
