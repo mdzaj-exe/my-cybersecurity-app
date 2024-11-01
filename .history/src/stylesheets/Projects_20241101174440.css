@@ -17,14 +17,12 @@
 .project-item {
   flex: 1; /* Ensure both projects take up equal space */
   max-width: 45%; /* Limit the width of each project */
-  text-align: center; /* Center the content inside each project */
 }
 
 .image-container {
   position: relative;
   width: clamp(150px, 20vw, 300px); /* Set a fixed width for the container */
   height: clamp(150px, 20vw, 300px); /* Set a fixed height for the container */
-  margin: 20px auto; /* Center the image container horizontally */
 }
 
 .project-image {
