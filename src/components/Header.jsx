@@ -6,11 +6,11 @@ const Header = () => (
     <p className="intro">Hello, I'm</p>
     <h1 className="title">Your Name</h1>
     <h2 className="role">Cybersecurity Specialist</h2>
-    <div className="image-container">
+    <div className="header-image-container">
       <img
         src="https://via.placeholder.com/150"
         alt="Profile"
-        className="profile-image"
+        className="header-profile-image"
       />
     </div>
     <button className="btn">Download CV</button>

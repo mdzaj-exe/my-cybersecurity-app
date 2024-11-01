@@ -21,30 +21,27 @@
 .image-container {
   position: relative;
   margin-right: 60px;
-  width: clamp(150px, 20vw, 200px); /* Set a fixed width for the container */
-  height: clamp(150px, 20vw, 200px); /* Set a fixed height for the container */
 }
 
 .about-me .profile-image {
-  width: 100%; /* Ensure it matches the container's width */
-  height: 100%; /* Ensure it matches the container's height */
+  width: clamp(150px, 20vw, 200px); /* Responsive sizing */
+  height: clamp(150px, 20vw, 200px);
   border-radius: 15px;
   position: absolute;
   top: 0;
   left: 0;
-  transform-origin: center; /* Rotate around the center */
-  transform: rotate(-15deg); /* Initial rotation */
+  transform: rotate(-15deg);
   transition: transform 0.3s ease-in-out, width 0.3s ease-in-out,
     height 0.3s ease-in-out;
 }
 
 .about-me .profile-image:hover {
-  transform: rotate(0deg); /* Rotate to align with background box on hover */
+  transform: rotate(0deg);
 }
 
 .background-box {
-  width: 100%; /* Ensure it matches the container's width */
-  height: 100%; /* Ensure it matches the container's height */
+  width: clamp(150px, 20vw, 200px); /* Match profile image */
+  height: clamp(150px, 20vw, 200px);
   background-color: var(--accent-color);
   border-radius: 20px;
 }

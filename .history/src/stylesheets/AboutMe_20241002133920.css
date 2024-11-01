@@ -21,30 +21,27 @@
 .image-container {
   position: relative;
   margin-right: 60px;
-  width: clamp(150px, 20vw, 200px); /* Set a fixed width for the container */
-  height: clamp(150px, 20vw, 200px); /* Set a fixed height for the container */
 }
 
 .about-me .profile-image {
-  width: 100%; /* Ensure it matches the container's width */
-  height: 100%; /* Ensure it matches the container's height */
+  width: clamp(150px, 20vw, 200px); /* Responsive sizing */
+  height: clamp(150px, 20vw, 200px);
   border-radius: 15px;
   position: absolute;
   top: 0;
   left: 0;
-  transform-origin: center; /* Rotate around the center */
-  transform: rotate(-15deg); /* Initial rotation */
+  transform: rotate(-15deg);
   transition: transform 0.3s ease-in-out, width 0.3s ease-in-out,
     height 0.3s ease-in-out;
 }
 
 .about-me .profile-image:hover {
-  transform: rotate(0deg); /* Rotate to align with background box on hover */
+  transform: rotate(0deg);
 }
 
 .background-box {
-  width: 100%; /* Ensure it matches the container's width */
-  height: 100%; /* Ensure it matches the container's height */
+  width: clamp(150px, 20vw, 200px); /* Match profile image */
+  height: clamp(150px, 20vw, 200px);
   background-color: var(--accent-color);
   border-radius: 20px;
 }
@@ -67,33 +64,14 @@
   flex-grow: 1; /* Allow boxes to grow */
   min-width: 150px; /* Minimum size */
   max-width: 250px; /* Maximum size */
-
-  /* Center text horizontally and vertically */
-  display: flex;
-  justify-content: center; /* Horizontal centering */
-  align-items: center; /* Vertical centering */
-  text-align: center; /* Ensure multi-line text is centered */
 }
 
 .info-box:hover {
   background-color: transparent;
 }
 
-/* Skills and Certifications Lists */
-.skills-list,
-.certifications-list {
-  list-style-type: none; /* Remove bullet points */
-  padding-left: 0; /* Remove default padding */
-  margin-top: 10 px;
-}
-
-.skills-list li,
-.certifications-list li {
-  margin-bottom: 8 px; /* Add space between items */
-}
-
 /* Media query for smaller screens */
-@media (max-width: 768 px) {
+@media (max-width: 768px) {
   .content {
     flex-direction: column; /* Stack vertically */
     align-items: center; /* Center align items */
@@ -101,7 +79,7 @@
   }
 
   .image-wrapper {
-    margin-bottom: 20 px; /* Add space below image */
+    margin-bottom: 20px; /* Add space below image */
   }
 
   .image-container {
@@ -110,11 +88,20 @@
 
   .about-me .profile-image,
   .background-box {
-    width: clamp (100 px, 30 vw, 150 px); /* Adjust for mobile */
-    height: clamp (100 px, 30 vw, 150 px);
+    width: clamp(100px, 30vw, 150px); /* Adjust for mobile */
+    height: clamp(100px, 30vw, 150px);
   }
 
   .info {
     margin-top: 20 px; /* Add spacing to separate the info from the image */
   }
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  margin-top: 20 px;
 }

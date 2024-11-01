@@ -29,7 +29,18 @@ const AboutMe = () => (
           certifications(Security+, CySA+, PenTest+) and hands-on labs
           (TryHackMe).
         </p>
-
+        <h3>Top Skills</h3>
+        <ul className="skills-list">
+          <li>Risk Assessment</li>
+          <li>Intrusion Detection</li>
+          <li>Linux</li>
+        </ul>
+        <h3>Top Certifications</h3>
+        <ul className="certifications-list">
+          <li>Google Cybersecurity Certificate</li>
+          <li>AWS Certified Cloud Practitioner</li>
+          <li>WGU Back-End Developer Certificate</li>
+        </ul>
         <button className="btn">Let's Talk</button>
       </div>
     </div>

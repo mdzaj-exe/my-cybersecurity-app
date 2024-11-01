@@ -17,19 +17,11 @@ const AboutMe = () => (
       </div>
       <div className="info">
         <div className="info-box-container">
-          <div className="info-box">Entry-Level Cybersecurity</div>
-          <div className="info-box">Google Cybersecurity Certificate</div>
-          <div className="info-box">Projects: 5+</div>
+          <div className="info-box">Level: Entry-Level</div>
+          <div className="info-box">Certificates: 20+</div>
+          <div className="info-box">Projects: 5</div>
         </div>
-        <p>
-          I am passionate about cybersecurity, ethical hacking, and protecting
-          sensitive information from cyber threats. I have hands-on experience
-          with intrusion detection, risk assessment, and Linux systems.
-          Currently, I am expanding my knowledge through various
-          certifications(Security+, CySA+, PenTest+) and hands-on labs
-          (TryHackMe).
-        </p>
-
+        <p>I am passionate about cybersecurity and software engineering...</p>
         <button className="btn">Let's Talk</button>
       </div>
     </div>
