@@ -26,14 +26,12 @@
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
   margin: 20px auto; /* Ensure it's centered horizontally */
-  width: 100%;
 }
 
 .profile-image {
   width: 150px;
   height: auto;
   border-radius: 50%; /* Circular image */
-  position: relative;
 }
 
 .btn {
